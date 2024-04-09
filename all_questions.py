@@ -67,10 +67,10 @@ def question3():
     answers = {}
 
     # type: string
-    answers['Agree?'] = None
+    answers['Agree?'] = 'no'
 
     # type: explain_string
-    answers['Explain'] = None
+    answers['Explain'] = 'classifiers must each have some ability to make better-than-random predictions based on the data. Since coin flipping lacks any predictive power or analysis, it does not offer a viable method for stock market prediction'
     return answers
 
 
@@ -79,13 +79,13 @@ def question4():
     answers = {}
 
     # type: bool
-    answers['(a) e=0.5, independent'] = None
+    answers['(a) e=0.5, independent'] = False
 
     # type: bool
-    answers['(b), independent'] = None
+    answers['(b), independent'] = True
 
     # type: bool
-    answers['(c) identical'] = None
+    answers['(c) identical'] = False
     return answers
 
 
