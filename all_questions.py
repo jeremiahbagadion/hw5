@@ -130,17 +130,17 @@ def question6():
     # type: string
     # Hint: The random guess line in an ROC curve corresponds to TPR=FPR.
     # choices: ['yes', 'no']
-    answers['(b) C2 better classifier than C1?'] = None
+    answers['(b) C2 better classifier than C1?'] = 'no'
 
     # type: explain_string
-    answers['(b) C2 better classifier than C1? Explain'] = None
+    answers['(b) C2 better classifier than C1? Explain'] = "both C1 and C2 lie on the random guess line, neither classifier is better than the other in terms of discriminative ability. They are both essentially random guessers"
 
     # type: string
     # choices: ['TPR/FPR', 'precision/recall']
-    answers['(c) Which metric?'] = None
+    answers['(c) Which metric?'] = 'TPR/FPR'
 
     # type: explain_string
-    answers['(c) explain'] = None
+    answers['(c) explain'] = "The TPR and FPR values are more indicative of performance because they reflect the ability of the classifiers to distinguish between the classes. Since both classifiers operate on a random basis, their performance is equivalent to random guessing"
     return answers
 
 
