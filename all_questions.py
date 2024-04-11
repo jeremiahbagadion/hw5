@@ -150,24 +150,24 @@ def question7():
 
     # type: string
     # choices: ['C1', 'C2', 'None']
-    answers['(i) Best classifier?'] = None
+    answers['(i) Best classifier?'] = 'C2'
 
     # type: explain_string
-    answers['(i) Best classifier, explain'] = None
+    answers['(i) Best classifier, explain'] = "C2 has a recall of 50%, which is much better than C1s recall of 10%. A higher recall is generally desirable, especially in scenarios where identifying positive instances is crucial"
 
     # type: string
     # choices: ['TPR-FPR', 'precision-recall-F1-Measure']
-    answers['(ii) appropriate metric pair'] = None
+    answers['(ii) appropriate metric pair'] = 'precision-recall-F1-Measure'
 
     # type: explain_string
-    answers['(ii) appropriate metric pair, explain'] = None
+    answers['(ii) appropriate metric pair, explain'] = "It provides a more comprehensive assessment compared to the {TPR, FPR} pair, which only considers true positive and false positive rates without accounting for the trade-off between precision and recall or the class distribution."
 
     # type: string
     # choices: ['C1', 'C2', 'C3']
-    answers['(iii) preferred classifier?'] = None
+    answers['(iii) preferred classifier?'] = 'C2'
 
     # type: explain_string
-    answers['(iii) best classifier, explain'] = None
+    answers['(iii) best classifier, explain'] = "the classifier with the highest Recall would generally be considered the best option among the three, subject to further validation and clinical judgment. C2 would be the preferred choice for the initial screening tool to detect cancer."
     return answers
 
 
