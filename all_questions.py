@@ -202,18 +202,23 @@ def question9():
 
     # type: dict[string,float]
     # keys: ['recall', 'precision', 'F-measure', 'accuracy']
-    answers['(i) metrics'] = None
+    answers['(i) metrics'] = {
+        'recall': 0.533333333,
+        'precision': 0.615384615,
+        'F-measure': 0.57142857,
+        'accuracy': 0.88
+        }
 
     # type: string
     # choices: ['recall', 'precision', 'F-measure', 'accuracy']
-    answers['(i) best metric?'] = None
+    answers['(i) best metric?'] = 'recall'
 
     # type: string
     # choices: ['recall', 'precision', 'F-measure', 'accuracy']
-    answers['(i) worst metric?'] = None
+    answers['(i) worst metric?'] = 'accuracy'
 
     # type: explain_string
-    answers['(ii) Explain your choices of best and worst metrics'] = None
+    answers['(ii) Explain your choices of best and worst metrics'] = "recall the best metric for weather prediction in Seattle because it measures how well the model identifies rainy days, which is crucial for planning and safety. Accuracy might be misleading, especially in imbalanced datasets where one class dominates. It treats all types of correct and incorrect predictions equally, potentially obscuring the model's performance."
     return answers
 
 
