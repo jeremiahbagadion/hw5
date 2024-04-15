@@ -202,7 +202,7 @@ def question9():
 
     # type: dict[string,float]
     # keys: ['recall', 'precision', 'F-measure', 'accuracy']
-    answers['(i) metrics'] = 
+    answers['(i) metrics'] = None
 
     # type: string
     # choices: ['recall', 'precision', 'F-measure', 'accuracy']
