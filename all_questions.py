@@ -116,16 +116,16 @@ def question6():
     answers = {}
 
     # type: eval_float
-    answers['(a) C1-TPR'] = None
+    answers['(a) C1-TPR'] = 'p'
 
     # type: eval_float
-    answers['(a) C2-TPR'] = None
+    answers['(a) C2-TPR'] = '2p'
 
     # type: eval_float
-    answers['(a) C1-FPR'] = None
+    answers['(a) C1-FPR'] = 'p'
 
     # type: eval_float
-    answers['(a) C2-FPR'] = None
+    answers['(a) C2-FPR'] = '2p'
 
     # type: string
     # Hint: The random guess line in an ROC curve corresponds to TPR=FPR.
@@ -137,10 +137,10 @@ def question6():
 
     # type: string
     # choices: ['TPR/FPR', 'precision/recall']
-    answers['(c) Which metric?'] = 'TPR/FPR'
+    answers['(c) Which metric?'] = 'precision/recall'
 
     # type: explain_string
-    answers['(c) explain'] = "The TPR and FPR values are more indicative of performance because they reflect the ability of the classifiers to distinguish between the classes. Since both classifiers operate on a random basis, their performance is equivalent to random guessing"
+    answers['(c) explain'] = "if the goal is to identify as many true positives as possible without concern for the number of false positives (which seems reasonable given the precision of 1/10), then the evaluation metric pair of {precision and recall} is correctly indicating the relative performance of C2 over C1."
     return answers
 
 
