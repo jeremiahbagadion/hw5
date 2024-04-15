@@ -228,21 +228,21 @@ def question10():
 
     # type: string
     # choices: ['T1', 'T2']
-    answers['(a) better test based on F-measure?'] = None
+    answers['(a) better test based on F-measure?'] = 'T1'
 
     # type: string
     # choices: ['T1', 'T2']
-    answers['(b) better test based on TPR/FPR?'] = None
+    answers['(b) better test based on TPR/FPR?'] = 'T2'
 
     # type: string
     # choices: ['F1', 'TPR/FPR']
-    answers['(c) Which evaluation measure to use between the two tests?'] = None
+    answers['(c) Which evaluation measure to use between the two tests?'] = 'TPR/FPR'
 
     # type: explain_string
-    answers['(c) Which evaluation measure? Explain'] = None
+    answers['(c) Which evaluation measure? Explain'] = "The TPR/FPR ratio directly captures this trade-off between true positive rate (TPR) and false positive rate (FPR). A higher TPR/FPR ratio indicates that the test is better at correctly identifying positive (cancer) cases while minimizing the number of false positives (healthy individuals diagnosed as having cancer)."
 
     # type: explain_string
-    answers['(d) Example scenario where you would reverse choise in (c)'] = None
+    answers['(d) Example scenario where you would reverse choise in (c)'] = "Spam email detection: In the context of building a spam email detection system, the priorities and consequences of false positives (legitimate emails misclassified as spam) and false negatives (spam emails misclassified as legitimate) are more balanced. False positives (legitimate emails classified as spam) can lead to important emails being missed or lost, which can be frustrating for users. At the same time, false negatives (spam emails classified as legitimate) can result in users receiving unwanted and potentially malicious spam emails."
     return answers
 #-----------------------------------------------------------
 if __name__ == '__main__':
