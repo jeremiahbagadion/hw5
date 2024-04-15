@@ -176,7 +176,7 @@ def question8():
     answers = {}
 
     # type: eval_float
-    answers['(a) precision for C0'] = '0.1'
+    answers['(a) precision for C0'] = '(p * 100) / (p * 100 + p * 900)'
 
     # type: eval_float
     answers['(a) recall for C0'] = 'p'
