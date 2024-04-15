@@ -179,10 +179,10 @@ def question8():
     answers['(a) precision for C0'] = '(p * 100) / (p * 100 + p * 900)'
 
     # type: eval_float
-    answers['(a) recall for C0'] = 'p'
+    answers['(a) recall for C0'] = '(p * 100) / 100'
 
     # type: eval_float
-    answers['(b) F-measure of C0'] = '0.2p / (0.1 + p)'
+    answers['(b) F-measure of C0'] = '0.2*p / (0.1 + p)'
 
     # type: string
     # choices: ['yes', 'no', 'unknown']
