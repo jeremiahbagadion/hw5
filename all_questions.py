@@ -211,14 +211,14 @@ def question9():
 
     # type: string
     # choices: ['recall', 'precision', 'F-measure', 'accuracy']
-    answers['(i) best metric?'] = 'recall'
+    answers['(i) best metric?'] = 'F-measure'
 
     # type: string
     # choices: ['recall', 'precision', 'F-measure', 'accuracy']
     answers['(i) worst metric?'] = 'accuracy'
 
     # type: explain_string
-    answers['(ii) Explain your choices of best and worst metrics'] = "recall the best metric for weather prediction in Seattle because it measures how well the model identifies rainy days, which is crucial for planning and safety. Accuracy might be misleading, especially in imbalanced datasets where one class dominates. It treats all types of correct and incorrect predictions equally, potentially obscuring the model's performance."
+    answers['(ii) Explain your choices of best and worst metrics'] = "accuracy might be a poor indicator of the overall performance of the algorithm in this case if the class distribution is imbalanced, because it does not take into account the false positives and false negatives. F-measure could be the best indicator of the overall performance as it provides a balance between precision and recall. It is especially useful in cases where there is an uneven class distribution, like in this case where days of rain are significantly more than days of sunshine."
     return answers
 
 
